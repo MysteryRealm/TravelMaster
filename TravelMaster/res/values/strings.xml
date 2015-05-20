@@ -1,0 +1,22 @@
+<resources>
+
+    <string name="app_name">旅行大师</string>
+    <string name="login_title">旅行大师</string>
+    <string name="login_account">用户名：</string>
+    <string name="login_account_hint">请输入您的用户名</string>
+    <string name="login_pwd">密码：</string>
+    <string name="login_pwd_hint">请输入您的密码</string>
+    <string name="login_register">没有账号？</string>
+    <string name="login_login">马上登录</string>
+    
+    <string name="register_title">新用户注册</string>
+    <string name="register_account">用户名：</string>
+    <string name="register_account_hint">请输入您的用户名</string>
+    <string name="register_pwd">密码：</string>
+    <string name="register_pwd_hint">请输入您的密码</string>
+    <string name="register_repwd">确认密码：</string>
+    <string name="register_repwd_hint">请再次输入您的密码</string>
+    <string name="register_email">注册邮箱：</string>
+    <string name="register_email_hint">请输入您的注册邮箱</string>
+    <string name="register_register">立即注册</string>
+</resources>
