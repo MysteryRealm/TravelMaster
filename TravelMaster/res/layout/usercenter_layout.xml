@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listitem_main_style"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <!-- 左半部分 -->
+        <!-- 设置用户的头像招聘，使用ImageView组件 -->
+
+        <ImageView
+            android:id="@+id/userAvatar"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_avatar"
+            tools:ignore="ContentDescription" />
+
+        <!-- 右半部分 -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:paddingLeft="5dp" >
+
+            <!-- 上半部分 -->
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/usercenter_username"
+                android:textSize="25sp" />
+
+            <!-- 下半部分 -->
+            <!-- 设置一个TableLayout组件对象 -->
+
+            <TableLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:collapseColumns="2"
+                android:stretchColumns="1" >
+
+                <!-- 第一行组件标签 -->
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <!-- 添加文本标签 -->
+
+                    <TextView
+                        android:id="@+id/lblGender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/usercenter_gender"
+                        android:textColor="#b88756"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtGender"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/usercenter_gender"
+                        android:textColor="#b88756"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <!-- 第二行组件标签 -->
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <!-- 添加文本标签 -->
+
+                    <TextView
+                        android:id="@+id/lblRegisterDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/usercenter_registerDate"
+                        android:textColor="#b88756"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtRegisterDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/usercenter_registerDate"
+                        android:textColor="#b88756"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <!-- 第三行组件标签 -->
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <!-- 添加文本标签 -->
+
+                    <TextView
+                        android:id="@+id/lblEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/usercenter_email"
+                        android:textColor="#b88756"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtEmail"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/usercenter_email"
+                        android:textColor="#b88756"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <!-- 第四行组件标签 -->
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <!-- 添加文本标签 -->
+
+                    <TextView
+                        android:id="@+id/lblMark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/usercenter_mark"
+                        android:textColor="#b88756"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txtMark"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:paddingLeft="8dp"
+                        android:text="@string/usercenter_mark"
+                        android:textColor="#b88756"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_reg_style"
+            android:text="@string/usercenter_logout"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnChangePwd"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login_bg"
+            android:text="@string/usercenter_changePwd"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnModifyInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_login_bg"
+            android:text="@string/usercenter_modifyInfo"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/btnLinearLayout"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp" >
+        
+        <ListView
+            android:id="@+id/lstButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    
+</RelativeLayout>

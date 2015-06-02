@@ -7,12 +7,15 @@
         android:minSdkVersion="8"
         android:targetSdkVersion="21" />
 
+    <!-- 设置互联网访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-        <activity android:name="org.nku.travelmaster.activity.LoginActivity" >
+        <activity android:name="org.nku.travelmaster.activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,8 +23,31 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="org.nku.travelmaster.activity.HomepageActivity"/>
+        <activity
+            android:name="org.nku.travelmaster.activity.HotattractionActivity"/>
+        <activity
+            android:name="org.nku.travelmaster.activity.ForumActivity"/>
+        <activity
+            android:name="org.nku.travelmaster.activity.UsercenterActivity"/>
+        <activity
+            android:name="org.nku.travelmaster.activity.LoginActivity"
+            android:label="用户登录" />
+        <activity
             android:name="org.nku.travelmaster.activity.RegisterActivity"
             android:label="新用户注册" />
+        <activity
+            android:name="org.nku.travelmaster.activity.MytravellistActivity"
+            android:label="我的旅程" />
+        <activity
+            android:name="org.nku.travelmaster.activity.MycollectionActivity"
+            android:label="我的收藏" />
+        <activity
+            android:name="org.nku.travelmaster.activity.MypostActivity"
+            android:label="我的帖子" />
+        <activity
+            android:name="org.nku.travelmaster.activity.MyfriendActivity"
+            android:label="我的关注" />
     </application>
 
 </manifest>

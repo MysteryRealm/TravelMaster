@@ -1,6 +1,14 @@
 <resources>
 
     <string name="app_name">旅行大师</string>
+    
+    <!-- main layout -->
+    <string name="main_homepage">首页</string>
+    <string name="main_hotattraction">最热门</string>
+    <string name="main_forum">论坛</string>
+    <string name="main_usercenter">个人中心</string>
+    
+    <!-- login layout -->
     <string name="login_title">旅行大师</string>
     <string name="login_account">用户名：</string>
     <string name="login_account_hint">请输入您的用户名</string>
@@ -9,6 +17,7 @@
     <string name="login_register">没有账号？</string>
     <string name="login_login">马上登录</string>
     
+    <!-- register layout -->
     <string name="register_title">新用户注册</string>
     <string name="register_account">用户名：</string>
     <string name="register_account_hint">请输入您的用户名</string>
@@ -19,4 +28,17 @@
     <string name="register_email">注册邮箱：</string>
     <string name="register_email_hint">请输入您的注册邮箱</string>
     <string name="register_register">立即注册</string>
+    
+    <!-- usercenter layout -->
+    <string name="usercenter_username">用户名</string>
+    <string name="usercenter_gender">性别</string>
+    <string name="usercenter_registerDate">注册时间</string>
+    <string name="usercenter_email">邮箱</string>
+    <string name="usercenter_mark">个性签名</string>
+    <string name="usercenter_logout">注销</string>
+    <string name="usercenter_modifyInfo">修改密码</string>
+    <string name="usercenter_changePwd">修改个人信息</string>
+    
+    <!-- lst button usercenter layout -->
+    <string name="lst_button_usercenter_buttonName">按钮名称</string>
 </resources>
